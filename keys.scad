@@ -9,7 +9,7 @@ include <./includes.scad>
 
 
 // example key
-dcs_row(5) legend("⇪", size=9) key();
+cherry_row(5) legend("⇪", size=9) key();
 
 // example row
 /* for (x = [0:1:4]) {
@@ -17,4 +17,4 @@ dcs_row(5) legend("⇪", size=9) key();
 } */
 
 // example layout
-/* preonic_default("dcs"); */
+/* preonic_default("cherry"); */
