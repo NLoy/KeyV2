@@ -26,21 +26,29 @@ module cherry_row(row=3, column=0) {
 
     children();
   } else if (row == 2) {
-    $total_depth = 7.45 - extra_stem_inset_height + extra_height;
+    $total_depth = 8 - extra_stem_inset_height + extra_height;
     $top_tilt = 2.5;
 
     children();
   } else if (row == 3) {
-    $total_depth = 6.55 - extra_stem_inset_height + extra_height;
+    $total_depth = 6.75 - extra_stem_inset_height + extra_height;
     $top_tilt = 5;
     children();
   } else if (row == 3) {
     $total_depth = 6.7 + 0.65 - extra_stem_inset_height + extra_height;
     $top_tilt = 11.5;
     children();
-  } else if (row >= 4) {
-    $total_depth = 6.7 + 0.65 - extra_stem_inset_height + extra_height;
+  } else if (row == 4) {
+    $total_depth = 7 + 0.65 - extra_stem_inset_height + extra_height;
     $top_tilt = 11.5;
+    children();
+  } else if (row == 5) {
+    $total_depth = 7 + 0.65 - extra_stem_inset_height + extra_height;
+    $top_tilt = 11.5;
+    children();
+  } else if (row >= 6) {
+    $total_depth = 7.4 + 0.65 - extra_stem_inset_height + extra_height;
+    $top_tilt = 8.2;
     children();
   } else {
     children();

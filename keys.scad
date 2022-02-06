@@ -7,9 +7,10 @@
 
 include <./includes.scad>
 
-
+/*
 // example key
-cherry_row(5) legend("⇪", size=9) key();
+adafruit_relegendable_row() legend("⇪", size=9) key();
+*/
 
 // example row
 /* for (x = [0:1:4]) {
@@ -17,4 +18,4 @@ cherry_row(5) legend("⇪", size=9) key();
 } */
 
 // example layout
-/* preonic_default("cherry"); */
+warp_main_default("cherry") key(); 

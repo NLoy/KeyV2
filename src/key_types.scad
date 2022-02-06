@@ -6,6 +6,19 @@ module spacebar() {
   6_25u() stabilized(mm=50) children();
 }
 
+module spacebar_u_1_5() {
+  $inverted_dish = true;
+  $dish_type = "sideways cylindrical";
+  children();
+}
+
+module spacebar_u_1_75() {
+  $inverted_dish = true;
+  $dish_type = "sideways cylindrical";
+  $top_tilt = 8.2;
+  stabilized(mm=50) children();
+}
+
 module lshift() {
   2_25u() stabilized() children();
 }

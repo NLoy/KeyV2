@@ -10,6 +10,7 @@ include <key_profiles/g20.scad>
 include <key_profiles/hipro.scad>
 include <key_profiles/grid.scad>
 include <key_profiles/cherry.scad>
+include <key_profiles/adafruit_relegendable.scad>
 include <key_profiles/dss.scad>
 
 // man, wouldn't it be so cool if functions were first order
@@ -32,6 +33,8 @@ module key_profile(key_profile_type, row, column=0) {
     grid_row(row, column) children();
   } else if (key_profile_type == "cherry") {
     cherry_row(row, column) children();
+  } else if (key_profile_type == "adafruit_relegendable") {
+    adafruit_relegendable_row(row, column) children();
   } else if (key_profile_type == "disable") {
     children();
   } else {
